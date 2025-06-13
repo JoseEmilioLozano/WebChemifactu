@@ -1,0 +1,131 @@
+.video-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.video-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.video-player {
+    padding: 20px;
+}
+
+.video-frame {
+    margin-bottom: 20px;
+}
+
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-responsive video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.video-description {
+    margin-top: 20px;
+}
+
+.video-description h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.video-scenes {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.video-scenes h4 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.video-scenes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.video-scenes li {
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+}
+
+.video-scenes li:last-child {
+    border-bottom: none;
+}
+
+.scene-time {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.custom-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background-color: rgba(0, 86, 179, 0.8);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.custom-play-button i {
+    color: white;
+    font-size: 30px;
+}
+
+.custom-play-button:hover {
+    background-color: rgba(0, 86, 179, 1);
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .video-player {
+        padding: 15px;
+    }
+    
+    .custom-play-button {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .custom-play-button i {
+        font-size: 24px;
+    }
+    
+    .video-scenes {
+        padding: 15px;
+    }
+}

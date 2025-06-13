@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes somos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <p>Factura electrónica</p>
+                <img src="images/logo2.png" alt="Logo">
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="menu">
+                <li><a href="index.html#opcion1">Opción 1</a></li>
+                <li><a href="index.html#opcion2">Opción 2</a></li>
+                <li><a href="index.html#opcion3">Opción 3</a></li>
+                <li><a href="index.html#opcion4">Opción 4</a></li>
+                <li><a href="index.html#opcion5">Opción 5</a></li>
+                <li><a href="quienessomos.html">Quiénes somos</a></li>
+                <li><a href="contactar.html">Contactar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="quienes-somos" class="section">
+            <div class="text">
+                <h2>Quiénes somos</h2>
+                <p>Somos una empresa dedicada a facilitar el proceso de facturación electrónica para empresas que utilizan tablas Access. Nuestro objetivo es simplificar y optimizar el envío de facturas a la AEAT.</p>
+                <img src="images/tablas_access.jpg" alt="Tablas Access">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Footer Content</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
